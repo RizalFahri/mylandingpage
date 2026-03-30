@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa Pembuatan Website Usaha Kecil | Simpel & Profesional</title>
-    <meta name="description" content="Website landing page simpel dan profesional untuk usaha kecil Anda.">
+    <title>Jasa Pembuatan Website untuk Usaha Anda | ArtaPage</title>
+    <meta name="title" content="Jasa Pembuatan Website untuk Usaha Anda | ArtaPage">
+    <meta property="og:title" content="Jasa Pembuatan Website untuk Usaha Anda | ArtaPage">
     <link rel="stylesheet" href="style.css?v=1.1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--<link rel="icon" href="logo.png" sizes="32x32" type="image/png">-->
+    <!--<link rel="apple-touch-icon" href="logo.png">-->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
 </head>
 
 <body>
@@ -28,7 +35,12 @@
                 <li><a href="#portfolio">Client</a></li>
                 <li><a href="#harga">Harga</a></li>
             </ul>
-            <a href="#koneksi" class="btn btn-outline nav-btn">Hubungi Kami</a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#koneksi" class="btn btn-outline nav-btn">Hubungi Kami</a>
+            </div>
             <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
@@ -49,8 +61,8 @@
             <div class="hero-image">
                 <div class="mockup-container">
                     <div class="blob-bg"></div>
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-                        alt="Mockup Website di HP" class="mockup-img shadow-lg" />
+                    <img src="images/hero-coding-full.png" alt="Pembuatan Website Profesional"
+                        class="mockup-img shadow-lg" />
                 </div>
             </div>
         </div>
@@ -188,11 +200,13 @@
             <div class="grid-3 portfolio-grid">
                 <!-- 1. Landing Page Usaha -->
                 <div class="card portfolio-card">
-                    <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
-                            alt="Landing Page Usaha">
+                    <div class="portfolio-img multi-device">
+                        <img src="images/portfolio/usaha_desktop.png" alt="Landing Page Usaha Desktop"
+                            class="desktop-view">
+                        <img src="images/portfolio/usaha_mobile.png" alt="Landing Page Usaha Mobile"
+                            class="mobile-view">
                         <div class="portfolio-overlay">
-                            <a href="https://landingpageusaha.atrapage.biz.id" target="_blank"
+                            <a href="https://landingpageusaha.artapage.biz.id" target="_blank"
                                 class="btn btn-primary btn-sm">Lihat Web</a>
                         </div>
                     </div>
@@ -203,11 +217,12 @@
                 </div>
                 <!-- 2. Website Sekolah -->
                 <div class="card portfolio-card">
-                    <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=2071&auto=format&fit=crop"
-                            alt="Website Sekolah">
+                    <div class="portfolio-img multi-device">
+                        <img src="images/portfolio/sekolah_desktop.png" alt="Website Sekolah Desktop"
+                            class="desktop-view">
+                        <img src="images/portfolio/sekolah_mobile.png" alt="Website Sekolah Mobile" class="mobile-view">
                         <div class="portfolio-overlay">
-                            <a href="https://sekolah.atrapage.biz.id" target="_blank"
+                            <a href="https://sekolah.artapage.biz.id" target="_blank"
                                 class="btn btn-primary btn-sm">Lihat Web</a>
                         </div>
                     </div>
@@ -218,11 +233,11 @@
                 </div>
                 <!-- 3. Website Desa -->
                 <div class="card portfolio-card">
-                    <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop"
-                            alt="Website Desa">
+                    <div class="portfolio-img multi-device">
+                        <img src="images/portfolio/desa_desktop.png" alt="Website Desa Desktop" class="desktop-view">
+                        <img src="images/portfolio/desa_mobile.png" alt="Website Desa Mobile" class="mobile-view">
                         <div class="portfolio-overlay">
-                            <a href="https://desa.atrapage.biz.id" target="_blank" class="btn btn-primary btn-sm">Lihat
+                            <a href="https://desa.artapage.biz.id" target="_blank" class="btn btn-primary btn-sm">Lihat
                                 Web</a>
                         </div>
                     </div>
@@ -233,11 +248,11 @@
                 </div>
                 <!-- 4. Aplikasi Kasir POS -->
                 <div class="card portfolio-card">
-                    <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1974&auto=format&fit=crop"
-                            alt="Aplikasi Kasir POS">
+                    <div class="portfolio-img multi-device">
+                        <img src="images/portfolio/kasir_desktop.png" alt="Aplikasi Kasir Desktop" class="desktop-view">
+                        <img src="images/portfolio/kasir_mobile.png" alt="Aplikasi Kasir Mobile" class="mobile-view">
                         <div class="portfolio-overlay">
-                            <a href="https://kasir.atrapage.biz.id" target="_blank" class="btn btn-primary btn-sm">Lihat
+                            <a href="https://kasir.artapage.biz.id" target="_blank" class="btn btn-primary btn-sm">Lihat
                                 Web</a>
                         </div>
                     </div>
@@ -248,11 +263,13 @@
                 </div>
                 <!-- 5. Undangan Pernikahan Digital -->
                 <div class="card portfolio-card">
-                    <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop"
-                            alt="Undangan Pernikahan Digital">
+                    <div class="portfolio-img multi-device">
+                        <img src="images/portfolio/undangan_desktop.png" alt="Undangan Pernikahan Desktop"
+                            class="desktop-view">
+                        <img src="images/portfolio/undangan_mobile.png" alt="Undangan Pernikahan Mobile"
+                            class="mobile-view">
                         <div class="portfolio-overlay">
-                            <a href="https://undangan.atrapage.biz.id" target="_blank"
+                            <a href="https://undangan.artapage.biz.id" target="_blank"
                                 class="btn btn-primary btn-sm">Lihat Web</a>
                         </div>
                     </div>
@@ -317,7 +334,8 @@
                 <h2>Siap Meningkatkan Penjualan Usaha Anda?</h2>
                 <p>Jangan sampai kalah saing karena pelanggan kesulitan mencari informasi Anda. Mari buat website
                     profesional hari ini.</p>
-                <a href="https://wa.me/6281567949442?text=Halo%20ArtaPage,%20saya%20siap%20membuat%20website%20profesional" class="btn btn-light btn-lg mt-4"><i class="fab fa-whatsapp mr-2"></i> Buat Website
+                <a href="https://wa.me/6281567949442?text=Halo%20ArtaPage,%20saya%20siap%20membuat%20website%20profesional"
+                    class="btn btn-light btn-lg mt-4"><i class="fab fa-whatsapp mr-2"></i> Buat Website
                     Sekarang</a>
             </div>
         </div>
@@ -360,9 +378,9 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Kontak Kami</h4>
-                    <p><i class="fas fa-envelope"></i> halo@atrapage.biz.id</p>
+                    <p><i class="fas fa-envelope"></i> admin@artapage.biz.id</p>
                     <p><i class="fab fa-whatsapp"></i> +62 815 6794 9442</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Jakarta Selatan, Indonesia</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Daerah Istimewa Yogyakarta, Indonesia</p>
                 </div>
             </div>
             <div class="footer-bottom">
