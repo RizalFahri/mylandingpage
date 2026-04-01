@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | ArtaPage - Solusi Go Digital UMKM</title>
+    <meta name="description"
+        content="Kisah di balik ArtaPage, visi kami untuk mendigitalkan UMKM Indonesia, dan tim yang berdedikasi membantu bisnis Anda tumbuh.">
+    <link rel="stylesheet" href="../style.css?v=1.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="../logo.png">
+    <link rel="apple-touch-icon" href="../logo.png">
+    <style>
+        .about-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #e0e7ff 100%);
+            text-align: center;
+        }
+
+        [data-theme="dark"] .about-hero {
+            background: linear-gradient(135deg, var(--light-bg) 0%, #1e293b 100%);
+        }
+
+        .story-section {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .founder-card {
+            text-align: center;
+            padding: 30px;
+            background: var(--light-bg-alt);
+            border-radius: var(--border-radius-lg);
+            transition: var(--transition);
+        }
+
+        .founder-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .founder-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .vm-box {
+            padding: 30px;
+            border-left: 5px solid var(--primary-color);
+            background: var(--light-bg);
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        @media (max-width: 768px) {
+            .vision-mission {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="../logo.png" alt="Logo ArtaPage" style="height: 32px; border-radius: 6px;">
+                <span>ArtaPage</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#solusi">Solusi</a></li>
+                <li><a href="../index.html#fitur">Fitur</a></li>
+                <li><a href="../index.html#portfolio">Client</a></li>
+                <li><a href="../index.html#harga">Harga</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="../index.html#koneksi" class="btn btn-outline nav-btn">Hubungi Kami</a>
+                </div>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <header class="about-hero">
+        <div class="container">
+            <span class="badge">Kisah Kami</span>
+            <h1>Tentang <span>ArtaPage</span></h1>
+            <p style="max-width: 700px; margin: 20px auto;">Misi kami adalah memberikan akses teknologi website kelas
+                dunia untuk setiap pelaku usaha UMKM di Indonesia dengan harga yang terjangkau.</p>
+        </div>
+    </header>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Asal Usul ArtaPage</h2>
+                <p>Berawal dari sebuah keresahan melihat banyaknya UMKM yang memiliki produk luar biasa namun kesulitan
+                    dalam menjangkau pasar digital karena kendala teknis dan biaya pembuatan website yang mahal.</p>
+            </div>
+            <div class="content-text" style="font-size: 1.1rem; color: var(--text-color);">
+                <p>ArtaPage didirikan pada tahun 2026 dengan satu tujuan sederhana: <strong>Mendigitalkan
+                        Indonesia.</strong> Kami menyadari bahwa di era sekarang, sebuah bisnis tanpa website
+                    profesional akan kehilangan banyak peluang. Namun, proses pembuatan website seringkali dianggap
+                    rumit, memakan waktu lama, dan membutuhkan biaya yang tidak sedikit.</p>
+                <p>Kami hadir untuk mendobrak stigma tersebut. Dengan pendekatan yang berfokus pada kecepatan,
+                    kemudahan, dan estetika, kami mengembangkan sistem yang memungkinkan UMKM memiliki "rumah digital"
+                    berkualitas tinggi hanya dalam hitungan hari, bukan minggu atau bulan.</p>
+            </div>
+
+            <div class="vision-mission">
+                <div class="vm-box">
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi platform solusi digital terdepan yang mendampingi pertumbuhan 1 juta UMKM Indonesia dalam
+                        bertransformasi ke ranah online pada tahun 2030.</p>
+                </div>
+                <div class="vm-box">
+                    <h3>Misi Kami</h3>
+                    <p>Memberikan layanan pembuatan website yang cepat, terjangkau, dan berkualitas tinggi serta
+                        mengedukasi para pengusaha lokal tentang pentingnya ekosistem digital untuk keberlanjutan
+                        bisnis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="founders section-padding bg-light-alt">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Para Pendiri</h2>
+                <p>Dibalik ArtaPage terdapat tim yang berdedikasi tinggi untuk memajukan UMKM Indonesia.</p>
+            </div>
+            <div class="founder-grid">
+                <div class="founder-card">
+                    <img src="fotorizal.JPG" class="founder-img">
+                    <h3>Rizal Fahri</h3>
+                    <p class="highlight-text">Founder & CEO</p>
+                    <p>Seorang pengembang web yang memiliki visi besar untuk membantu pengusaha lokal. Rizal percaya
+                        bahwa teknologi harus menjadi solusi, bukan beban bagi para pejuang UMKM.</p>
+                    <div class="social-links"
+                        style="justify-content: center; display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="https://id.linkedin.com/in/rizal-fahri"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="fotonaufal.png" class="founder-img">
+                    <h3>Naufal Syarifuddin</h3>
+                    <p class="highlight-text">Co-Founder & Creative Director</p>
+                    <p>Dengan latar belakang desain grafis dan UI/UX, Arta memastikan setiap website yang lahir dari
+                        ArtaPage memiliki estetika premium yang mengangkat nilai jual brand pelanggan.</p>
+                    <div class="social-links"
+                        style="justify-content: center; display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="https://id.linkedin.com/in/naufalsrfdn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section-padding">
+        <div class="container text-center">
+            <div class="cta-box bg-primary rounded-lg shadow-lg" style="padding: 60px 40px; color: var(--white);">
+                <h2>Ingin Menjadi Bagian dari Cerita Sukses Kami?</h2>
+                <p>Ribuan UMKM telah memulai langkah digitalnya bersama kami. Giliran Anda sekarang.</p>
+                <a href="https://wa.me/6281567949442?text=Halo%20ArtaPage,%20saya%20siap%20membuat%20website%20profesional"
+                    class="btn btn-light btn-lg mt-4"><i class="fab fa-whatsapp mr-2"></i> Mulai Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-deep">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 style="display: flex; align-items: center; gap: 10px;">
+                        <img src="../logo.png" alt="Logo ArtaPage" style="height: 36px; border-radius: 6px;">
+                        <span>ArtaPage</span>
+                    </h3>
+                    <p>Solusi website profesional, menarik, dan berorientasi hasil untuk UMKM, Sekolah, dan Instansi di
+                        seluruh Indonesia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="../index.html#portfolio">Website Usaha</a></li>
+                        <li><a href="../index.html#portfolio">Website Sekolah</a></li>
+                        <li><a href="../index.html#portfolio">Website Desa</a></li>
+                        <li><a href="../index.html#harga">Penawaran Spesial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="../index.html#portfolio">Portofolio</a></li>
+                        <li><a href="../index.html#cara-kerja">Cara Kerja</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak Kami</h4>
+                    <p><i class="fas fa-envelope"></i> admin@artapage.biz.id</p>
+                    <p><i class="fab fa-whatsapp"></i> +62 815 6794 9442</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Daerah Istimewa Yogyakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArtaPage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Adjust footer link for "Tentang Kami" to point to top since we are on the page
+        document.querySelector('.footer-links a[href="#"]').addEventListener('click', (e) => {
+            if (e.target.textContent === 'Tentang Kami') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+
+</html>

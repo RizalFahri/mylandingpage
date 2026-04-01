@@ -25,20 +25,54 @@
 }
 
 /* Dark Mode Overrides */
-:root[data-theme="dark"] {
-    --light-bg: #0f172a;          /* Slate 900 */
-    --light-bg-alt: #020617;      /* Slate 950 */
-    --text-color: #f1f5f9;        /* Slate 100 */
-    --text-light: #94a3b8;        /* Slate 400 */
-    --white: #1e293b;             /* Slate 800 (Card backgrounds) */
-    --dark-color: #f8fafc;        /* Slate 50 */
+[data-theme="dark"] {
+    --light-bg: #0b0e14;
+    --light-bg-alt: #010409;
+    --text-color: #f0f6fc;
+    --text-light: #8b949e;
+    --white: #161b22; 
+    --dark-color: #ffffff;
     --border-color: rgba(255, 255, 255, 0.1);
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 [data-theme="dark"] body {
     background-color: var(--light-bg);
     color: var(--text-color);
+}
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, 
+[data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .bg-primary,
+[data-theme="dark"] .bg-dark,
+[data-theme="dark"] .bg-dark-deep,
+[data-theme="dark"] .cta-box,
+[data-theme="dark"] .hero,
+[data-theme="dark"] .solution-content p,
+[data-theme="dark"] .problem-card p,
+[data-theme="dark"] .feature-item p,
+[data-theme="dark"] .step-card p,
+[data-theme="dark"] .portfolio-info p {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .feature-item,
+[data-theme="dark"] .step-card,
+[data-theme="dark"] .portfolio-card {
+    background-color: var(--white);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .text-muted {
+    color: #8b949e !important;
+}
+
+[data-theme="dark"] .badge {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
 }
 
 * {
@@ -309,10 +343,15 @@ p {
     font-size: 1rem;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0;
 }
 
 .theme-toggle {
@@ -321,7 +360,7 @@ p {
     color: var(--text-color);
     font-size: 1.25rem;
     cursor: pointer;
-    padding: 8px;
+    padding: 10px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -488,7 +527,7 @@ p {
 }
 
 .feature-item p {
-    color: #cbd5e1;
+    color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 0;
 }
@@ -917,8 +956,15 @@ p {
     .section-padding { padding: 60px 0; }
     
     .nav-links { display: none; }
-    .nav-btn { display: none; }
-    .mobile-menu-btn { display: block; }
+    
+    .nav-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-actions { display: none; }
+    .mobile-menu-btn { display: flex !important; padding: 10px; margin-left: 0; width: 44px; height: 44px; align-items: center; justify-content: center; }
 
     .nav-links.active {
         display: flex;
@@ -998,11 +1044,18 @@ p {
     .card { padding: 1.25rem; }
     .feature-item { padding: 1.25rem 1rem; }
     
-    .main-price { font-size: 2rem; }
-    .benefit-list li { font-size: 0.9rem; gap: 10px; }
-    .benefit-list i { font-size: 1.1rem; }
+    .pricing-simple-box.premium-card {
+        padding-top: 15px;
+    }
+
+    .card-header h3 { font-size: 1.1rem; }
+    .main-price { font-size: 1.75rem; }
+    .main-price span { font-size: 0.85rem; }
     
-    .pricing-action .btn { font-size: 1rem; padding: 14px; }
+    .benefit-list li { font-size: 0.85rem; gap: 8px; margin-bottom: 0.75rem; }
+    .benefit-list i { font-size: 1rem; }
+    
+    .pricing-action .btn { font-size: 0.95rem; padding: 12px; }
     
     .footer-brand p { padding-right: 0; }
     .social-links { justify-content: center; }
